@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+
+    color: #fff;
+    font-family: "Open Sans", 'Courier New', Courier, monospace;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    position: fixed;
+    width: 100vw;
+}
+
+.nav .logo {
+    font-size: 28px;
+}
+
+.nav .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav .menu .list-items {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+
+    cursor: pointer;
+}
+
+.nav .menu .list-items:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.section .section-heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+.main {
+    /* background-color: aquamarine; */
+}
+
+.about {
+    /* background-color: rgb(15, 236, 152); */
+}
+
+.work {
+    /* background-color: rgb(222, 36, 247); */
+}
+
+.contact {
+    /* background-color: rgb(66, 158, 245); */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* position: fixed; */
+    width: 100vw;
+    height: 50vh;
+
+}
+
+.footer-text {
+    color: aliceblue;
+    font-size: 50px;
+
+}
+
+.bulb {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+}
