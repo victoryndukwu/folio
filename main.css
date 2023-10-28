@@ -1,140 +1,138 @@
- @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Quicksand:wght@300;400;500;600;700&family=Zen+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Quicksand:wght@300;400;500;600;700&family=Zen+Dots&display=swap");
 
- /* general styling */
- * {
-     padding: 0;
-     margin: 0;
-     /* background-color: #000; */
-     /* color: rgb(110, 43, 233); */
-     color: white;
-     font-family: "Open Sans", 'Courier New', Courier, monospace;
- }
+/* general styling */
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #fffcf2;
+  font-family: "Quicksand", sans-serif;
+}
 
- .constainer {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     width: 90%;
- }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
 
- .section {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     background-color: #000;
-     width: 100vw;
- }
+.keyword {
+  font-family: "Edu TAS Beginner", "Montserrat", "Poppins", sans-serif, cursive;
+  font-weight: 500;
+  color: #7ea16b;
+}
 
- .section .section-heading {
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     font-size: 50px;
- }
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  width: 100vw;
+}
 
- /* nav styling */
+.section .section-heading {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
 
- .nav {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 15vh;
-     /* position: fixed; */
-     width: 100vw;
-     background-color: #000;
- }
+/* nav styling */
 
- .nav .container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     width: 90%;
-     height: 100%;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  /* position: fixed; */
+  width: 100vw;
+}
 
- }
+.nav .container {
+  justify-content: space-between;
+}
 
- .nav .logo {
-     font-size: 28px;
-     padding: 0 20px;
- }
+.nav .logo {
+  font-size: 28px;
+  padding: 0 20px;
+}
 
- .logo-text {
-     font-family: 'Quicksand', sans-serif;
-     text-transform: uppercase;
-     font-size: 16px;
- }
+.logo-text {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
- .nav .menu {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
+.nav .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
- }
+.nav .menu .menu-item {
+  font-family: "Quicksand", sans-serif;
 
- .nav .menu .list-items {
-     list-style-type: none;
-     text-decoration: none;
-     padding: 10px 20px 10px 20px;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
 
-     cursor: pointer;
- }
+.nav .menu .menu-item:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
 
- .nav .menu .list-items:hover {
-     text-decoration: underline;
-     font-weight: 700;
- }
+/******** main section **********/
+/* main section styling */
 
- /* main/hero section styling */
+.main,
+.aside {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
- .main {
-     /* background-color: aquamarine; */
-     display: grid;
-     place-items: center;
- }
+.aside{
+    margin: 100px 0;
+}
 
- .main .container {
-     display: grid;
-     place-items: center;
+.main .container,
+.aside .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+}
 
-     background-color: #000;
-     width: 90%;
-     height: 100%;
- }
+.aside .container {
+  align-items: end;
+  text-align: right;
+}
 
- .main-heading {
-     font-family: 'Michroma', sans-serif;
-     text-transform: uppercase;
-     font-size: 120px;
+.main-heading {
+  font-family: "Michroma", sans-serif;
+  font-size: 80px;
+  color: #252422;
+  font-weight: 700;
+}
 
- }
+.footer,
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
- .about {
-     background-color: rgb(15, 236, 152);
-     height: 50vh;
- }
+.footer .container {
+  align-items: start;
+  width: 50vw;
+}
 
- .work {
-     /* background-color: rgb(222, 36, 247); */
- }
-
- .contact {
-     /* background-color: rgb(66, 158, 245); */
- }
-
- .footer {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-color: #000;
-     /* position: fixed; */
-     width: 100vw;
-     height: 50vh;
-
- }
-
- .footer-text {
-     color: aliceblue;
-     font-size: 50px;
-
- }
+.footer-title {
+  font-size: 50px;
+}

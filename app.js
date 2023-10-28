@@ -1,6 +1,11 @@
-
-// let bulb = getElementById("")
-// addEventListener
-
-// let page = getElementById("body");
-// console.log(page);
+fetch("footer.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("footer").innerHTML = data;
+  });
+  
+fetch("nav.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("nav").innerHTML = data;
+  });
