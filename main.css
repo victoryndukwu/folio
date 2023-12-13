@@ -250,21 +250,20 @@
     align-items: start;
   }
 
-  .footer-title{
+  .footer-title {
     font-size: 20px;
     margin: 10px 0;
   }
 
-  .footer-links-container{
+  .footer-links-container {
     margin: 10px 0 10px 0;
     font-size: 16px;
-
   }
 
-  .footer-email, .footer-phone {
+  .footer-email,
+  .footer-phone {
     font-size: 16px;
   }
-
 }
 
 /* work */
